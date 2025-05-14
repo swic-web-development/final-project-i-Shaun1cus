@@ -7,9 +7,13 @@ export default function App() {
 
   useEffect(() => {
     async function fetchShips() {
-      const response = await fetch('https://swapi.dev/api/starships/')
-      const data = await response.json()
-      setShips(data.results)
+      try {
+        const response = await fetch('https://swapi.tech/api/starships/')
+        const data = await response.json()
+        setShips(data.result) // Corrected path to access the ships data
+      } catch (error) {
+        console.error('Error fetching ships:', error)
+      }
     }
     fetchShips()
   }, [])

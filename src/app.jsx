@@ -31,7 +31,7 @@ export default function App() {
   }, [])
 
   return (
-    <main>
+    <main className="min-h-screen bg-black p-6 text-white">
       <Header />
       <ShipsGrid ships={ships} />
     </main>

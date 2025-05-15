@@ -3,28 +3,28 @@ export default function Card({ ship }) {
     ship
 
   return (
-    <div className="m-4 rounded-lg bg-white p-4 shadow-md">
-      <h2 className="text-xl font-bold">{name}</h2>
-      <p>
-        <strong>Model:</strong> {model}
+    <div className="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:bg-gray-700 hover:shadow-xl">
+      <h2 className="mb-4 text-2xl font-bold text-yellow-400">{name}</h2>
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Model:</strong> {model}
       </p>
-      <p>
-        <strong>Manufacturer:</strong> {manufacturer}
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Manufacturer:</strong> {manufacturer}
       </p>
-      <p>
-        <strong>Starship Class:</strong> {starship_class}
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Starship Class:</strong> {starship_class}
       </p>
-      <p>
-        <strong>Crew:</strong> {crew}
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Crew:</strong> {crew}
       </p>
-      <p>
-        <strong>Passengers:</strong> {passengers}
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Passengers:</strong> {passengers}
       </p>
-      <p>
-        <strong>Length:</strong> {length} meters
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Length:</strong> {length} meters
       </p>
-      <p>
-        <strong>Cargo Capacity:</strong> {cargo_capacity} kg
+      <p className="text-gray-300">
+        <strong className="text-yellow-400">Cargo Capacity:</strong> {cargo_capacity} kg
       </p>
     </div>
   )

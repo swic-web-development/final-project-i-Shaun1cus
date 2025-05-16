@@ -3,7 +3,8 @@ export default function Card({ ship }) {
     ship
 
   return (
-    <div className="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:bg-gray-700 hover:shadow-xl">
+    // Displays the ship details in a card format
+    <section className="rounded-lg bg-gray-800 p-6 shadow-lg transition-shadow duration-300 hover:bg-gray-700 hover:shadow-xl">
       <h2 className="mb-4 text-2xl font-bold text-yellow-400">{name}</h2>
       <p className="text-gray-300">
         <strong className="text-yellow-400">Model:</strong> {model}
@@ -26,6 +27,6 @@ export default function Card({ ship }) {
       <p className="text-gray-300">
         <strong className="text-yellow-400">Cargo Capacity:</strong> {cargo_capacity} kg
       </p>
-    </div>
+    </section>
   )
 }

@@ -6,10 +6,11 @@ export default function ShipsGrid({ ships }) {
   }
 
   return (
-    <div className="lg:grid-cols-3bg-black grid grid-cols-1 gap-6 rounded-lg p-6 sm:grid-cols-2">
+    // Displays the ships in a grid layout
+    <main className="lg:grid-cols-3bg-black grid grid-cols-1 gap-6 rounded-lg p-6 sm:grid-cols-2">
       {ships.map((ship) => (
         <Card ship={ship} key={ship.uid || ship.name} />
       ))}
-    </div>
+    </main>
   )
 }

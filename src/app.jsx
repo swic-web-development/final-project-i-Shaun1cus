@@ -2,9 +2,11 @@ import Header from './components/header'
 import ShipsGrid from './components/ships-grid'
 import { useState, useEffect } from 'react'
 
+// App function used to fetch and display starship data
 export default function App() {
-  const [ships, setShips] = useState([])
+  const [ships, setShips] = useState([]) // State to hold the starship data
 
+  // useEffect hook to fetch starship data
   useEffect(() => {
     async function fetchDetailedShips() {
       try {
